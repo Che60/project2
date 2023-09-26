@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form</title>
 </head>
+
 <body>
-    
+    <h2>정보 입력란</h2>
+    <div>
+        이름 :
+        <input type="text" name="username"><br>
+        이메일 :
+        <input type="email" name="Email"><br>
+        성별 :
+        <input type="radio" name="gender" value="1">남자
+        <input type="radio" name="gender" value="2">여자<br>
+        <label for="birthday">생일 : </label>
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit" value="Submit"><br>
+        백신 접종 여부 :
+        <select name="vaccine" id="vaccine">
+            <option value="none"></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+        좋아하는 운동 :
+        축구 <input type="checkbox">
+        농구 <input type="checkbox">
+        배드민턴 <input type="checkbox">
+        야구 <input type="checkbox">
+        수영 <input type="checkbox">
+        <br>
+        <label for="browser">주로 사용하는 브라우저를 선택하세요 :</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="마이크로소프트 엣지">
+            <option value="파이어폭스">
+            <option value="크롬">
+            <option value="오페라">
+            <option value="사파리">
+        </datalist>
+        <input type="submit">
+
+        <p><label for="introduce">한줄 자기소개 :</label></p>
+        <textarea id="introduce" name="introduce" rows="3" cols="50">짧은 자기소개를 입력하세요.</textarea>
+        <br>
+        <input type="submit" value="Submit"><br><br><br>
+        <input type="button" value="저장">
+    </div>
 </body>
+
 </html>
